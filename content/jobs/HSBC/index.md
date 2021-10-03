@@ -1,10 +1,10 @@
 ---
-date: '2017-12-21'
-title: 'UI Engineer Co-op'
-company: 'Apple'
-location: 'Cupertino, CA'
-range: 'July - December 2017'
-url: 'https://www.apple.com/music/'
+date: '2020-09-07'
+title: 'Trainee Software Engineer'
+company: 'HSBC'
+location: 'Pune, Maharashtra'
+range: 'September 2020 - September 2021'
+url: 'kjdhahd'
 ---
 
 - Developed and shipped highly interactive web applications for Apple Music using Ember.js

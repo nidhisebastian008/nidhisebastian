@@ -17,7 +17,7 @@ const StyledHeroSection = styled.section`
   }
 
   h1 {
-    margin: 0 0 30px 4px;
+    margin: 35px 0 30px 4px;
     color: var(--green);
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
@@ -59,32 +59,39 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const two = <h2 className="big-heading">Nidhi Anne Sebastian</h2>;
+  // const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
+        I’m a Software Engineer at{' '}
+        <a href="https://www.natwestgroup.com//" target="_blank" rel="noreferrer">
+          Natwest Group
+        </a>{' '}
+        based out of Delhi NCR{' '}
+      </p>
+      <p>
+        I am a keen learner and take up challenges that come my way and try to give the best of
+        myself to my work.
+      </p>
+
+      <p>
+        Apart from that , I love to dance ,also professionally trained in Bharatnatyam and Kathak.
+        Yoga , mediation and keeping fit is my hobby.
       </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="https://www.linkedin.com/in/nidhi-sebastian-6a5b91166/"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Contact me on Linedin!
     </a>
   );
 
-  const items = [one, two, three, four, five];
+  const items = [one, two, four, five];
 
   return (
     <StyledHeroSection>
