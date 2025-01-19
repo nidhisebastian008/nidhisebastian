@@ -19,7 +19,7 @@ const StyledJobsSection = styled.section`
 
     // Prevent container from jumping
     @media (min-width: 700px) {
-      min-height: 340px;
+      min-height: 50px;
     }
   }
 `;
@@ -156,8 +156,8 @@ const StyledTabPanel = styled.div`
     }
   }
 
-  .range {
-    margin-bottom: 25px;
+  .range,
+  .location {
     color: var(--light-slate);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
@@ -273,7 +273,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, company, range, location } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -287,14 +287,15 @@ const Jobs = () => {
                     <h3>
                       <span>{title}</span>
                       <span className="company">
-                        &nbsp;@&nbsp;
-                        <a href={url} className="inline-link">
+                        &nbsp;@&nbsp;{company}
+                        {/* <a href={url} className="inline-link">
                           {company}
-                        </a>
+                        </a> */}
                       </span>
                     </h3>
 
                     <p className="range">{range}</p>
+                    <p className="location">{location}</p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>

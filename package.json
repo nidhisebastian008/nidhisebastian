@@ -61,7 +61,8 @@
     "react-transition-group": "^4.3.0",
     "scrollreveal": "^4.0.5",
     "smooth-scroll": "^16.1.0",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",

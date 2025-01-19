@@ -43,6 +43,9 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+  b {
+    color: var(--green);
+  }
 `;
 
 const Hero = () => {
@@ -64,20 +67,20 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a Software Engineer at{' '}
-        <a href="https://www.natwestgroup.com//" target="_blank" rel="noreferrer">
-          Natwest Group
+        I’m a Software Engineer 2 at{' '}
+        <a href="https://www.expedia.com/" target="_blank" rel="noreferrer">
+          Expedia Group
         </a>{' '}
-        based out of Delhi NCR{' '}
+        based out of <b>Austin,Texas.</b>.{' '}
       </p>
       <p>
-        I am a keen learner and take up challenges that come my way and try to give the best of
-        myself to my work.
+        I hold a Bachelor’s degree in Computer Science and Engineering and have a strong passion for
+        developing scalable, efficient, and innovative software which impact the world.
       </p>
 
       <p>
         Apart from that , I love to dance ,also professionally trained in Bharatnatyam and Kathak.
-        Yoga , mediation and keeping fit is my hobby.
+        Yoga , meditation and keeping fit is my hobby.
       </p>
     </>
   );
@@ -87,7 +90,7 @@ const Hero = () => {
       href="https://www.linkedin.com/in/nidhi-sebastian-6a5b91166/"
       target="_blank"
       rel="noreferrer">
-      Contact me on Linedin!
+      Contact me on Linkedin!
     </a>
   );
 

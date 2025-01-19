@@ -126,7 +126,17 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Java', 'Python', 'Django', 'Git', 'Maven'];
+  const skills = [
+    'Java',
+    'Kotlin',
+    'SpringBoot',
+    'Reactive Programming',
+    'Distributed Systems',
+    'RestAPI',
+    'gRPC',
+    'Kafka',
+    'MongoDB',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,16 +146,20 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I am nidhi, I graduated in 2020 from Maharaja Agrasen Institute of Technology
-              in Bachelors in Technology in Computer Science and Engineering!
+              I have worked in domains such as Fin-Tech and Travel. At{' '}
+              <a href="https://www.expedia.com/"> Expedia Group</a> I am developing APIs that
+              empower businesses to enable their customers to seamlessly shop for and book car
+              rentals.
             </p>
 
             <p>
-              Thereafter ,I worked at <a href="https://www.hsbc.co.in/">HSBC Technology India</a>{' '}
-              where I worked on automations and monitoring tools using Python and Django .
-              Currently, working at <a href="https://www.natwestgroup.com/"> Natwest Group</a>{' '}
-              currently working with Java Enterprise applications, in the payments domain of the
-              bank.
+              I also worked at <a href="https://www.natwestgroup.com/"> Natwest Group</a> where I
+              built microservices to facilitate and enhance the fraud detection of payments which
+              resulted in acclerated payments and enhanced the models of the profiling engine.
+              During my time at <a href="https://www.hsbc.co.in/">HSBC Technology India</a> I wrote
+              automation scripts and created various monitoring tools using Python and Django ,
+              reducing manual effort that was required in auditing IAM information by building
+              scripts to automatically automate IAM feeds.
             </p>
 
             <p>Here are a few tools & technologies I’ve been working with recently:</p>
@@ -160,7 +174,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="/home/nidhi/Documents/portfolio-page/v4/src/images/img.jpg"
+              src="../../images/me.jpeg"
               width={500}
               height={500}
               quality={95}

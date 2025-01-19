@@ -1,43 +1,30 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { srConfig, email } from '@config';
+import { srConfig, email, socialMedia } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledContactSection = styled.section`
-  max-width: 600px;
-  margin: 0 auto 100px;
-  text-align: center;
+  max-width: 700px;
 
-  @media (max-width: 768px) {
-    margin: 0 auto 50px;
-  }
+  .inner {
+    display: flex;
 
-  .overline {
-    display: block;
-    margin-bottom: 20px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-md);
-    font-weight: 400;
-
-    &:before {
-      bottom: 0;
-      font-size: var(--fz-sm);
+    @media (max-width: 600px) {
+      display: block;
     }
 
-    &:after {
-      display: none;
+    // Prevent container from jumping
+    @media (min-width: 700px) {
+      min-height: 50px;
     }
   }
 
-  .title {
-    font-size: clamp(40px, 5vw, 60px);
-  }
-
-  .email-link {
+  .email-link,
+  .linkedin-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    margin-right: 10px;
   }
 `;
 
@@ -59,13 +46,16 @@ const Contact = () => {
 
       <h2 className="title">Get In Touch</h2>
 
-      <p>
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
+      {/* <p>
+        My inbox is always open.
         Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-      </p>
+      </p> */}
 
       <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
+        Email me
+      </a>
+      <a className="linkedin-link" href={`${socialMedia[2].url}`}>
+        Linkedin
       </a>
     </StyledContactSection>
   );
