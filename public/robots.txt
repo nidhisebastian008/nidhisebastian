@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://nidhisebastian008.github.io/sitemap-index.xml
+Host: https://nidhisebastian008.github.io
